@@ -19,9 +19,9 @@ let adventurous = false;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'chocolate';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 10;
+let pets = 3;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 10;
+let friendsPets = 4;
 // 11 - Add two pets to your `pets` variable
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -58,14 +58,14 @@ if (pets < allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-mostPets = 0;
+let mostPets
 
-if (pets > friendsPets){
-  (mostPets = pets);
-} if (friendsPets > pets) {
-  (mostPets = friendsPets);
-} if (pets == friendsPets) {
-  (mostPets = pets);
+if (pets > friendsPets) {
+  mostPets = pets;
+} else if (friendsPets > pets) {
+  mostPets = friendsPets;
+} else {
+  console.log('We both have ' + pets + ' pets.')
 }
 
 console.log(mostPets);
