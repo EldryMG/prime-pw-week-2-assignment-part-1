@@ -15,15 +15,15 @@ let luckyNumber = 2
 // Refer back to the videos if you need help with this one.
 console.log('My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner!');
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
-let adventurous = false;
+let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food = 'chocolate';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets = 3;
+let pets = 7;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 4;
+let friendsPets = 8;
 // 11 - Add two pets to your `pets` variable
-
+pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
@@ -60,12 +60,10 @@ if (pets < allowedPets){
 // console.log `mostPets` after the conditional has run.
 let mostPets
 
-if (pets > friendsPets) {
+if (pets >= friendsPets) {
   mostPets = pets;
-} else if (friendsPets > pets) {
+} else if (friendsPets >= pets) {
   mostPets = friendsPets;
-} else {
-  console.log('We both have ' + pets + ' pets.')
 }
 
 console.log(mostPets);
@@ -81,4 +79,4 @@ switch (true) {
     console.log('We both have ' + pets + ' pets.');
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-console.log((adventurous == true) ? "Adventures are great!" : "How about we stay home?");
+console.log(adventurous ? "Adventures are great!" : "How about we stay home?");
